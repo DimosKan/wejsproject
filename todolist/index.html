@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+ <body>
+   <div class="header">
+      <h1>To-Do List</h1>
+        <div class="add-task">
+          <label for="add-task-input">Τίτλος εργασίας:</label>
+          <input id = "add-task-input" type="text" placeholder="προσθέστε μια εργασία">
+        </div>
+        <div id = "corrector1">
+          <label for="duetime">Προθεσμία:</label>
+          <input type="datetime-local" id="duetime" name="Date" value="2023-02-17 | 00:55">
+        </div>
+      <div id = "corrector2">
+        <label for="remindertime">Ημερομηνία υπενθύμισης</label>
+        <input  type="datetime-local" id="remindertime" name="Date" value="2023-02-17 | 00:55">
+      </div>
+      <div class="categ-options">
+        <select id="cat-options">
+          <option value="Work">Δουλειά</option>
+          <option value="Personal">Προσωπικό</option>
+          <option value="Hobby">Χόμπι</option>
+        </select>
+        <button id="add-button">Προσθήκη εργασίας</button>
+      </div>
+   </div>
+    <div class="sort-task">
+      <select id="sort-option">
+        <option value="date-added">Ταξ. κατά ημ/νία προσθήκης</option>
+        <option value="date-due">Ταξ. κατά ημ/νία προθεσμιών</option>
+        <option value="completion-status">ταξ κατάσταση ολοκλήρωσης </option>
+      </select>
+      <button id="sort-button">Ταξινόμηση</button>
+      <button id="resetbutton" onClick="window.location.reload();">επαναφορά</button>
+    </div>
+    <div class="list">
+      <ul id="task-list"></ul>
+    </div>
+    <div id = "tablediv"> 
+      <table id = "todotable2" style="width:100%">
+        <tr>
+          <th>Τϊτλος εργασίας</th>
+          <th>Προθεσμία</th>
+          <th>Ημ/νια προσθήκης</th>
+          <th>Κατηγορία</th>
+          <th>Ολοκληρώθηκε;</th>
+        </tr>
+        <tr>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script> 
+  </body>
+</html>
+
+

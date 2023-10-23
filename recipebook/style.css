@@ -1,0 +1,91 @@
+h1{
+  color: brown;
+  font: "EB Garamond";
+  text-align: center;
+}
+#bg{
+  background-image: url('https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/herby_potato_cakes_with_11603_16x9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+/*Προσαρμόζω την 1η 4η και 5η στήλη για να κάνω χώρω γία την εκτέλεση*/
+#recipe-table th:nth-child(1),
+#recipe-table td:nth-child(1){
+  width:10%
+}
+
+#recipe-table th:nth-child(4),
+#recipe-table td:nth-child(4),
+#recipe-table th:nth-child(5),
+#recipe-table td:nth-child(5) {
+  width: 5%;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  word-wrap: break-word;
+  max-width: 300px;
+}
+
+th {
+  background-color: #be356a;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #be356a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #be356a;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #be356a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff656c;
+}
+

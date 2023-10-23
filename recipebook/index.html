@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Προσωπικό βιβλίο μαγειρικής</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id = "bg">
+      <h1>Προσωπικό βιβλίο μαγειρικής</h1>
+      <form id="recipe-form">
+        <label for="title">Τίτλος:</label>
+          <input type="text" id="title" name="title" required><br><br>
+        <label for="ingredients">Υλικά:</label>
+          <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
+        <label for="instructions">Οδηγίες:</label>
+          <textarea id="instructions" name="instructions" rows="8" cols="50" required></textarea><br><br>
+        <label for="category">Κατηγορία:</label>
+          <input type="text" id="category" name="category"><br><br>
+          <input type="submit" value="Προσθήκη Συνταγής" onclick="addRecipe()">
+      </form>
+      <br>
+      <input type="text" id="search" placeholder="Αναζήτηση λέξεων κλειδιά ">
+      <button onclick="searchRecipes()">Αναζήτηση</button>
+      <br><br>
+      <table id="recipe-table">
+        <tr>
+          <th>Τϊτλος</th>
+          <th>Υλικά</th>
+          <th>Οδηγίες</th>
+          <th>Κατηγορία</th>
+          <th>Ενέργεια</th>
+        </tr>
+      </table>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
+

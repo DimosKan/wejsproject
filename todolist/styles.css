@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+  margin: 0;
+  padding: 0;
+}
+#tablediv{
+    border: 1px solid;
+    background-color: rgba(255,255,255,.6);
+    text-align: center;
+}
+
+.header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.add-task {
+  display: inline-block;
+  margin-left: 12px
+}
+
+#add-button , #sort-button , #resetbutton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.list li {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.sort-task {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#corrector1{
+  margin-left: 87px;
+}
+
+#corrector2{
+  margin-left: -13px;
+}
+
